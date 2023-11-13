@@ -1,0 +1,244 @@
+manifest:
+  remotes:
+    - name: rfpros
+      url-base: git@github.com:rfpros
+
+  projects:
+# Main Lyra 24 P10 project
+    - name: lyra_24_canvas_python_prf_project
+      revision: main
+      remote: rfpros
+      path: lyra_24_canvas_python_prf_project
+
+# little fs
+    - name: littlefs
+      path: lyra_24_canvas_python_prf_project/modules/external/littlefs
+      revision: main
+      remote: rfpros
+
+# Lyra ZCbor
+    - name: lyra_zcbor
+      path: lyra_24_canvas_python_prf_project/modules/external/lyra_zcbor
+      revision: main
+      remote: rfpros
+
+# Lyra mcu manager
+    - name: lyra_mcumgr
+      path: lyra_24_canvas_python_prf_project/modules/external/lyra_mcumgr
+      revision: main
+      remote: rfpros
+
+# Module independent files for Lyra 24
+    - name: lyra_24_micropython_common_board
+      path: lyra_24_canvas_python_prf_project/modules/lyra_24_micropython_common_board
+      revision: main
+      remote: rfpros
+
+# Lyra 24 micropython embed files
+    - name: micropython_embed_tools
+      path: lyra_24_canvas_python_prf_project/modules/micropython_embed_tools
+      revision: main
+      remote: rfpros
+
+# Lyra 24 micropython tools
+    - name: micropython_embed
+      path: lyra_24_canvas_python_prf_project/modules/micropython_embed
+      revision: lyra_24
+      remote: rfpros
+
+# Hapi
+    - name: pi_hapi_ble_advertising
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_advertising
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_gatt_database
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_gatt_database
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_gattserver
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_gattserver
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_gattclient
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_gattclient
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_common
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_common
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_scanner
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_scanner
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_connection
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_connection
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_ble_tx_power
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_ble_tx_power
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_common
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_common
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_error
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_error
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_glue
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_glue
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_string_manipulation
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_string_manipulation
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_sys_info
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_sys_info
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_time
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_time
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_gpio
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_gpio
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_i2c
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_i2c
+      revision: main
+      remote: rfpros
+    - name: pi_hapi_spi
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_spi
+      revision: main
+      remote: rfpros
+
+# dapi
+    - name: pi_dapi_lyra_ble_advertising
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_advertising
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_common
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_common
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_connection
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_connection
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_scanner
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_scanner
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_gattserver
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_gattserver
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_gattclient
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_gattclient
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_ble_tx_power
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_ble_tx_power
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_common
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_common
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_error
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_error
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_glue
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_glue
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_sys_info
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_sys_info
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_time
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_time
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_gpio
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_gpio
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_i2c
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_i2c
+      revision: main
+      remote: rfpros
+    - name: pi_dapi_lyra_spi
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_spi
+      revision: main
+      remote: rfpros
+
+# micropython Language interface
+    - name: li_mp_ble_advertiser
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_advertiser
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_common
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_common
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_connection
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_connection
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_scanner
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_scanner
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_gattserver
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_gattserver
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_gattclient
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_gattclient
+      revision: main
+      remote: rfpros
+    - name: li_mp_ble_tx_power
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_ble_tx_power
+      revision: main
+      remote: rfpros
+    - name: li_mp_timer
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_timer
+      revision: main
+      remote: rfpros
+    - name: li_mp_machine_i2c
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_machine_i2c
+      revision: main
+      remote: rfpros
+    - name: li_mp_machine_pin
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_machine_pin
+      revision: main
+      remote: rfpros
+    - name: li_mp_machine_spi
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_machine_spi
+      revision: main
+      remote: rfpros
+    - name: li_mp_zcbor
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_zcbor
+      revision: main
+      remote: rfpros
+
+
+  self:
+    path: west_manifest
+
+jenkins:
+  version_prefix: 0.0.0
+  part_number: 999-00224
+  part_number_uart_dfu: 999-00225
+  part_number_ota_dfu: 999-00226
+  project: lyra_24
+  application: canvas_python
+  module: p
+  power: rf
+  sdk: 4.3.1
