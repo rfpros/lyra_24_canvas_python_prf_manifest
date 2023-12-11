@@ -115,6 +115,10 @@ manifest:
       path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_spi
       revision: main
       remote: rfpros
+    - name: pi_hapi_uart
+      path: lyra_24_canvas_python_prf_project/modules/hapi/pi_hapi_uart
+      revision: main
+      remote: rfpros
 
 # dapi
     - name: pi_dapi_lyra_ble_advertising
@@ -177,6 +181,10 @@ manifest:
       path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_spi
       revision: main
       remote: rfpros
+    - name: pi_dapi_lyra_uart
+      path: lyra_24_canvas_python_prf_project/modules/dapi/pi_dapi_lyra_uart
+      revision: main
+      remote: rfpros
 
 # micropython Language interface
     - name: li_mp_ble_advertiser
@@ -221,6 +229,10 @@ manifest:
       remote: rfpros
     - name: li_mp_machine_spi
       path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_machine_spi
+      revision: main
+      remote: rfpros
+    - name: li_mp_machine_uart
+      path: lyra_24_canvas_python_prf_project/modules/limp/li_mp_machine_uart
       revision: main
       remote: rfpros
     - name: li_mp_zcbor
